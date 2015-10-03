@@ -1,0 +1,42 @@
+<p>You are supposed to implement the functions of account "Log in" and "Register" for the most popular instant messager QQ.  The most challenging part is that QQ now has more than a billion users.</p>
+
+<p><b>
+Input Specification:
+</b></p>
+
+<p>Each input file contains one test case. For each case, the first line contains an integer N (&lt=10<sup>5</sup>) - the total number of queries.  Then N lines follow, each contains a query in the format:</p>
+
+<pre>Command QQ_No Password
+</pre>
+<p>where "Command" is either "R" (meaning to register a new account, and hence followed by a new account number and a password), or "L" (meaning to log in with an existing account, and hence followed by the account number and the password); "QQ_No" is an integer that is greater than 1000 and no more than 10 digits long; and "Password" is a string with no less than 6 and no more than 16 characters without any space.
+</p>
+
+<p><b>
+Output Specification:
+</b></p>
+
+<p>For each test case, print the corresponding message for each query in a line.  The messages are:</p>
+<p>
+<li> If a new account is successfully registered, output "Register Successful";
+<li> If the new registering account number already exists, output "ERROR: Account Number Already Exists";
+<li> If log in successfully, output "Log in Successful";
+<li> If the log in account does not exist, output "ERROR: Account Not Exist";
+<li> If log in with a wrong password, output "ERROR: Wrong Password".
+</p>
+
+<b>Sample Input:</b><pre>
+5
+L 1234567890 myQQ@qq.com
+R 1234567890 myQQ@qq.com
+R 1234567890 myQQ@qq.com
+L 1234567890 myQQ@qq
+L 1234567890 myQQ@qq.com
+</pre>
+
+<b>Sample Output:</b><pre>
+ERROR: Account Not Exist
+Register Successful
+ERROR: Account Number Already Exists
+ERROR: Wrong Password
+Log in Successful
+</pre>
