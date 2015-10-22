@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1419771735 source:c:\users\lucas\desktop\p4test\test\main.cpp
+	<time.h>
+	<stdio.h>
+	<stdlib.h>
+
